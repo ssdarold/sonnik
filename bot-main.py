@@ -22,18 +22,15 @@ import requests
 # Устанавливаем нужную временную зону
 local_timezone = pytz.timezone('Europe/Moscow')
 
-openai.api_key = "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"
+openai.api_key = ""
 model_engine = "text-davinci-003"
 
-YUKASSA_SECRET_KEY = "live_6mBjQ_DlCPJz7TRBopJKbeyixm1Jx7cpK7Nxy_HD2zY"
-YUKASSA_SHOP_ID = "236798"
+YUKASSA_SECRET_KEY = ""
+YUKASSA_SHOP_ID = ""
 
-# YUKASSA_SECRET_KEY = "test_I2mD16phit9EpgNdty25G7WuV9TyQJ0WzeECBiF9RLE"
-# YUKASSA_SHOP_ID = "241908"
 
 # Инициализация бота
-bot = Bot(token="573458948:AAFKzIe-RW9Xf3nNWDeoq6THa6ZgovqkZL8")
-# bot = Bot(token="6535557082:AAEWEkN_pyH9b2lMiIInVC6yiGsh9A_J9sU", proxy="http://proxy.server:3128")
+bot = Bot(token="", proxy="http://proxy.server:3128")
 dp = Dispatcher(bot, storage=MemoryStorage())
 dp.middleware.setup(LoggingMiddleware())
 
